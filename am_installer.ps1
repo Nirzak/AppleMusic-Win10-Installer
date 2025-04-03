@@ -126,7 +126,7 @@ $targetDeviceFamily.SetAttribute("MinVersion", "10.0.$windowsBuild.0")
 
 $manifest.Save("C:\Program Files (x86)\Apple Music\AppxManifest.xml")
 
-Remove-Item -Path "C:\Program Files (x86)\Apple Music\AppxSignature.p7x", "C:\Program Files (x86)\Apple Music\AppxBlockMap.xml", "C:\Program Files (x86)\Apple Music\AppxMetadata" -Recurse -Force
+Remove-Item -Path "C:\Program Files (x86)\Apple Music\AppxSignature.p7x", "C:\Program Files (x86)\Apple Music\AppxBlockMap.xml", "C:\Program Files (x86)\Apple Music\[Content_Types].xml", "C:\Program Files (x86)\Apple Music\AppxMetadata" -Recurse -Force
 #endregion Apple Music patch
 
 #region Apple Music install
